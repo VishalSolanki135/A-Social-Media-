@@ -1,0 +1,42 @@
+<app-form-bg></app-form-bg>
+
+<div class="background min-vh-100" >
+    <div class="bg-2">
+        <div class="container">
+
+            <!-- All the content -->
+            <div class="text-white pt-1 pt-sm-16vh"  style = "background-image = url('/assets/images/favicon/favicon.png')">
+              <div *ngIf = "formError" class="alert alert-primary text-dark mb-5"> {{ formError }} </div>
+                <h1 class="text">social media</h1>
+                <h2 class="text1">Register an account.</h2>
+
+                <form class="register-form user mt-5" (submit) = "formSubmit();">
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="First Name" name="first_name" [(ngModel)]="credentials.first_name">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Last Name" name="last_name" [(ngModel)]="credentials.last_name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address" name="email" [(ngModel)]="credentials.email">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" name="password" [(ngModel)]="credentials.password">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Confirm Password" name="password_confirm" [(ngModel)]="credentials.password_confirm">
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-user btn-block" value="Register">
+                </form>
+                <h4 class="text-center p-4 m-0">Already have an account?
+                    <a routerLink="/login" class="text-white link">Login</a>
+                </h4>
+            </div>
+
+        </div>
+    </div>
+</div>

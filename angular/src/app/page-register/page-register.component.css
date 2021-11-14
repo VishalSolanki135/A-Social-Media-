@@ -1,0 +1,20 @@
+.text{
+  font-size: 60px;
+  font-weight: 1000;
+  text-align: center;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text1{
+  font-weight: 300;
+  margin-top: 1px;
+  text-align: center;
+  /* background: -webkit-radial-gradient(center, 5em 40px, lightgreen, black); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+}
+
+.background {
+  background-color: #37517e;
+}

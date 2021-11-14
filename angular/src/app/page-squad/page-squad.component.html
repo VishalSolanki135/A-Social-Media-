@@ -1,0 +1,58 @@
+<app-form-bg></app-form-bg>
+
+
+
+<div id="wrapper">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content" class="min-vh-100 background">
+
+            <app-topbar></app-topbar>
+
+
+            <div class="background min-vh-100">
+                <div class="bg-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <h1 class="font-weight-800 display-3"></h1>
+                            </div>
+                            <div class="col-md-10 pt-4 pt-sm-12vh">
+
+
+                                <h2 class=" font-weight-700 text-center text-white display-md-4">Create Unique Squad</h2>
+                                <form class="login-form w-100 w-md-50 mx-auto user mt-5" (submit)="createSquad();">
+                                    <div class="form-group">
+                                        <input type="text" name="squad" class="form-control form-control-user" placeholder="Name of Squad" required [(ngModel)] = "credentials.squad">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" name="speciality" class="form-control form-control-user" placeholder='speciality' [(ngModel)] = "credentials.speciality">
+                                    </div>
+                                    <input type="submit" class="btn btn-primary btn-user btn-block" value="Launch">
+                                    <h2 class="h1 font-weight-400 text-center mt-5">
+                                        <a routerLink="/feed" href="" class="link text-white text-center text-uppercase">Back to Feed</a>
+                                    </h2>
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <div>
+                          <!-- <h2 class="text-white mt-5 pt-5 pl-4"><small>Squad Name:</small>{{ squads.squad }}<summary >Active members[0]</summary></h2> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
